@@ -1,0 +1,116 @@
+body {
+    font-family:Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #101010;
+    color: #ffffff;
+}
+
+header {
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    color: white;
+    isolation: isolate;
+}
+
+.churchband {
+    position: relative;
+    padding: 9em 0;
+    background-color: #000;
+
+    &::before {
+        content:"";
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        background-image: url(churchband.jpg);
+        background-size: cover;
+        background-position: top center;
+        opacity: .3;
+    }
+}
+
+.churchband h1 {
+    position: relative;
+    color: #ffffff;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    isolation: isolate;
+    font-size: 55px;
+    text-shadow:#000;
+    opacity: 0.8;
+}
+
+.churchband nav a {
+    position: relative;
+    color: #ffffff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 20px;
+    isolation: isolate;
+    opacity: 0.8;
+}
+
+main {
+    padding: 2em;
+    max-width: 800px;
+    margin: auto;
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+.profile-photo {
+    max-width: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 1em 0;
+}
+
+.social-links {
+    margin-top: 1em;
+}
+
+.social-links a img {
+    margin-right: 15px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.social-links a img:hover {
+    color: #0077b5;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.8em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button {
+    background-color: #444444;
+    color: white;
+    padding: 0.7em 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0077b5;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #444444;
+    margin-top: 2em;
+}
